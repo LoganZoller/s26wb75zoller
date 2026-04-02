@@ -17,7 +17,7 @@ block content
     table#outer
         - for(let i = 0; i < rows; i++) {
           tr#middle
-            - for(let j = 0; i < cols; i++) {
+            - for(let j = 0; j < cols; j++) {
               td= 2 * i - j
             - }
         - }
