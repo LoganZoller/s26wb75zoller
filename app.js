@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var eggRouter = require('./routes/egg');
 var gridRouter = require('./routes/grid');
+var pickRouter = require('./routes/pick');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/egg', eggRouter);
 app.use('/grid', gridRouter);
+app.use('/pick', pickRouter);
 
 
 
