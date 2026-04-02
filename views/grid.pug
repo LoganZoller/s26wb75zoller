@@ -16,9 +16,9 @@ block content
   else 
     table#outer
         - for(let i = 0; i < 10; i++) {
-            tr#middle
+          tr#middle
                 - for(let j = 0, i < 10; i++) {
-                    td = (2 * i - j)
+                  td = 2 * i - j
                 - }
         - }
 
