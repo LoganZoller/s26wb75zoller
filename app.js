@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var eggRouter = require('./routes/egg');
+var gridRouter = require('./routes/grid');
 var usersRouter = require('./routes/users');
 
 
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/egg', eggRouter);
+app.use('/grid', gridRouter);
 app.use('/users', usersRouter);
 
 
